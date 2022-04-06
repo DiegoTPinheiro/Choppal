@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Choppal</title>
+	<link rel="stylesheet" href="cardapio.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+                <h4>CHOPPAL</h4>
+        </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="Choppal.html">Home</a>
+                </li>
+                <li>
+                    <a href="Cardapio.html">Cardápio</a>
+                </li>
+                <li>
+                    <a href="entrega.html">Entrega</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+                <li>
+                    <a href="entrar.html">Entrar</a>
+                </li>
+            </ul>
+    </nav>
+ 	<div class="corpo">
+        <b>
+        <center><h1>Cardápio</h1></center><br/>
+
+         <audio preload="auto" controls="controls" class="musica">
+            <source src="audios/Thiaguinho   Vamo Que Vamo.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+
+         <h1>Refeições</h1><br/>
+ 		<img src="Imagens/espetinho.jpg" class="espeto">
+            <br/><br/><br/><br/><br/> &nbsp Espetinhos variados R$8,00
+            <p class="pe">Quantos espetinhos:</p><input id="c1" type="number" class="calculo"><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <img src="Imagens/feijuca top.jpg" class="feijuca">
+            <br/><br/><br/><br/><br/> &nbsp Feijuca Top R$30,00 
+            <p class="pf">Quantas feijucas:</p><input id="c2" type="number" class="calculo"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <img src="Imagens/torresmo.jpg" class="torresmo">
+            <br/><br/><br/><br/><br/> &nbsp Torresminho R$10,00 
+            <p class="pt">Quantos torresminhos:</p> <input id="c3" type="number" class="calculo"><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <img src="Imagens/batata.jpg" class="batata">
+            <br/><br/><br/><br/><br/> &nbsp Batitinha R$10,00
+            <p class="pb">Quantas batatinhas:</p> <input id="c4" type="number" class="calculo"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <h1>Bebidas</h1><br/>
+        <img src="Imagens/chopppp.jpg" class="chopp">
+            <br/><br/><br/><br/><br/> &nbsp Choppal R$9,50 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+            Quantos choppals: <input id="b1" type="number" class="calculob"><br/><br/><br/><br/><br/>
+        <img src="Imagens/cerva.jpg" class="cerva">
+            <br/><br/><br/><br/><br/> &nbsp Cervejinha R$7,50 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+            Quantas cervejinhas: <input id="b2" type="number" class="calculob"><br/><br/><br/><br/><br/>
+        <img src="Imagens/refri.jpg" class="refri">
+            <br/><br/><br/><br/><br/> &nbsp Refrizinho R$5,50 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+            Quantos refrizinhos: <input id="b3" type="number" class="calculob"><br/><br/><br/><br/><br/>
+        <br>
+            <center><input type="Button" style="width:150px;height:25px" value="Calcular o total!" onclick="total()">
+        <br>
+        <script>
+        function total(){
+		    var c1 = parseFloat (document.getElementById("c1").value);
+		    var c2 = parseFloat (document.getElementById("c2").value);
+		    var c3 = parseFloat (document.getElementById("c3").value);
+		    var c4 = parseFloat (document.getElementById("c4").value);
+		    var b1 = parseFloat (document.getElementById("b1").value);
+		    var b2 = parseFloat (document.getElementById("b2").value);
+		    var b3 = parseFloat (document.getElementById("b3").value);
+
+		var total = ((c1*8)+(c2*30)+(c3*10)+(c4*10)+(b1*9,50)+(b2*7,50)+(b3*5,50))
+
+		if (total >= 1)
+				alert ("Total da conta! R$" +total)
+
+	}
+
+        </script>
+        </br>
+    </div> 
+
+ 	<footer>
+ 		<div class="infos">
+            <img src="imagens/Formas de pagamento.png" class="pay">
+            <a href="contato.html"><img src="imagens/email.png" class="email"></a>
+            <a href="contato.html"><img src="imagens/telefone.png" class="telefone"></a>
+            <a href="contato.html"><img src="imagens/whatsapp.png" class="whatsapp"></a>
+            <a href="contato.html"><img src="imagens/instagram.png" class="instagram"></a>
+ 		</div>
+ 	</footer>
+
+</body>
+</html>

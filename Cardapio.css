@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    font-family: 'Roboto Mono', monospace;
+    background-color:#9e6b29;
+}
+
+.corpo{
+    
+    background: #900;
+    padding-top: 20px;
+    padding-right: 75px;
+    padding-left: 75px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #b08a5a;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Roboto Mono', monospace;
+    background-color:#9e6b29;
+}
+
+.logo{
+    color: #ffa500 ;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links a{
+    color: #ffa500 ;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.musica{
+    position:absolute;
+    margin-left: 1500px;
+}
+
+.espeto{
+    width: 500px;
+    float: left;
+    
+
+}
+.feijuca{
+    width: 500px;
+    float: left;
+    
+}
+.torresmo{
+    width: 500px;
+   float: left;
+}
+.batata{
+    width: 500px;
+    float: left;
+}
+.chopp{
+    width: 200px;
+    float: left;
+}
+.cerva{
+    width: 200px;
+    float: left;
+}
+.refri{
+    width: 200px;
+    float: left;
+}
+
+.pay{
+    width: 700px;
+    margin-left: 275px;
+}
+
+.email{
+    width: 35px;
+    margin-left: 75px;
+}
+
+.telefone{
+    width: 35px;
+    margin-left: 50px;
+}
+
+.whatsapp{
+    width: 35px;
+    margin-left: 50px;
+}
+
+.instagram{
+    width: 35px;
+    margin-left: 50px;
+}
+
+@media screen and (max-width:1600px){
+    .musica{
+        margin-left: 1200px;
+    }
+
+    .calculo{
+        margin-left:760px;
+    }
+
+    .pe{
+        text-align: right;
+    }
+
+    .pf{
+        text-align: right;
+    }
+
+    .pt{
+        text-align: right;
+    }
+
+    .pb{
+        text-align: right;
+    }
+}
